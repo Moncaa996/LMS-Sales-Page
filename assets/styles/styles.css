@@ -85,9 +85,98 @@ a {
     width: 60%;
 }
 
+/* Viedo */
 
+.video-content {
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.video-content > .video-preview {
+    width: 100%;
+}
+
+/* Testimonials */
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    margin: 4rem 0;
+}
+
+/* lehet flexbox-al is, de komplikaltabb
+.testimonials-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    outline: 1px solid red;
+    display: inline-block;
+    width: calc(100% / 3 - 80px / 3);
+    margin: 20px;
+}
+
+.card:last-child {
+    margin-right: 0px;
+}
+
+.card:first-child {
+    margin-left: 0px;
+}
+*/
+
+/* Priceing */
+
+.pricing-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+    margin: 2rem 0;
+}
+
+.price-tag {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    border-bottom: 3px ridge var(--primary);
+}
+
+.pricing-tagline {
+    min-height: 5rem;
+}
+
+.pricing-feature-list {
+    margin: 1.5rem 0;
+}
+
+/* Footer*/
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+
+.footer-link {
+    color: var(--light);
+}
+
+.footer-link:hover {
+    color: var(--light-hover);
+}
 
 /* Utility */
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem;
+}
 
 .btn {
     background-color: var(--light);
@@ -110,6 +199,19 @@ a {
 
 .btn.btn-primary:hover {
     background-color: var(--link-hover);
+}
+
+.card {
+    background-color: var(--light);
+    color: var(--dark);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.card-heading {
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
 }
 
 p {
@@ -135,4 +237,13 @@ h3 {
     margin: 1.5rem 0;
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-dark {
+    background-color: var(--dark);
+    color: var(--light);
 }
