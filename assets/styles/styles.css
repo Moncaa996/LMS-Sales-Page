@@ -1,9 +1,11 @@
 :root {
     --primary: #2f63c4; 
     --light: whitesmoke; 
+    --light-hover: whithe;
     --dark: #202020;
     --link: #0544ba;
     --link-hover: #516fa6;
+    --padding-btn-link: 0.5rem 1rem;
 }
 
 * {
@@ -52,10 +54,11 @@ a {
 
 .nav-items {
     display: flex;
+    align-items: center;
 }
 
 .nav-link {
-    padding: 0.5rem 1rem;
+    padding: var(--padding-btn-link);
     font-weight: 500;
     transition: 0.4s;
     color: var(--link);
@@ -67,3 +70,69 @@ a {
 
 
 /* Main Banner */
+
+.section-banner {
+    padding: 2rem;
+    border-top: 5px ridge var(--primary);
+    background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.banner-content {
+    width: 60%;
+}
+
+
+
+/* Utility */
+
+.btn {
+    background-color: var(--light);
+    color: var(--dark);
+    padding: var(--padding-btn-link);
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background-color: var(--light-hover);
+}
+
+.btn.btn-primary {
+    background-color: var(--link);
+    color: var(--light);
+}
+
+.btn.btn-primary:hover {
+    background-color: var(--link-hover);
+}
+
+p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1 {
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    margin: 1.8rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3 {
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
