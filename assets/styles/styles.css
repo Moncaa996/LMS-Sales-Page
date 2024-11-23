@@ -15,7 +15,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 24px;
 }
 
 body {
@@ -72,7 +72,7 @@ a {
 /* Main Banner */
 
 .section-banner {
-    padding: 2rem;
+    padding: 40px 40px 120px;
     border-top: 5px ridge var(--primary);
     background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6)), url(../images/banner.png);
     background-repeat: no-repeat;
@@ -95,6 +95,7 @@ a {
 
 .video-content > .video-preview {
     width: 100%;
+    cursor: pointer;
 }
 
 /* Testimonials */
@@ -224,6 +225,7 @@ p {
 h1 {
     margin: 2rem 0;
     font-size: 2rem;
+    line-height: 2.5rem;
     font-weight: 600;
 }
 
