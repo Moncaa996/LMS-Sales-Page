@@ -6,6 +6,7 @@
     --link: #0544ba;
     --link-hover: #516fa6;
     --padding-btn-link: 0.5rem 1rem;
+    --padding-btn-link-sm: 0.5rem 0.75rem;
 }
 
 * {
@@ -20,6 +21,7 @@ html {
 
 body {
     font-family: "Poppins", sans-serif;
+    min-width: 400px;
 }
 
 img {
@@ -160,7 +162,22 @@ a {
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "logo links1 links2";
     grid-gap: 40px;
+    margin: 4rem 0;
+}
+
+.footer-logo {
+    grid-area: logo;
+}
+
+.footer-links-1 {
+    grid-area: links1;
+}
+
+.footer-links-2 {
+    grid-area: links2;
 }
 
 .footer-link {
@@ -207,6 +224,9 @@ a {
     color: var(--dark);
     padding: 2rem;
     border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-heading {
@@ -248,4 +268,58 @@ h3 {
 .bg-dark {
     background-color: var(--dark);
     color: var(--light);
+}
+
+/* Media queries*/
+
+@media screen and (max-width: 992px){
+    
+    html {
+        font-size: 24px;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    .nav-link, .btn {
+        padding: var(--padding-btn-link-sm);
+    }
+
+    .d-md-max-none {
+        display: none;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .pricing-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    html {
+        font-size: 20px;
+    }
+    .d-sm-max-none {
+        display: none;
+    }
+
+    .main-menu {
+        margin: 0 auto
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "logo logo"
+        "links1 links2";
+    }
 }
