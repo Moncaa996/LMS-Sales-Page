@@ -209,6 +209,7 @@ a {
     display: inline-block;
     border-radius: 0.5rem;
     transition: 0.4s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -274,6 +275,37 @@ h3 {
     background-color: var(--dark);
     color: var(--light);
 }
+
+/* Form */
+
+.column {
+    margin: 40px;
+}
+
+.form-row {
+    width: 500px;
+    margin: 20px auto;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+.text-field {
+    display: block;
+    padding: 0.3rem;
+    width: 100%;
+    max-width: 500px;
+    font-size: 1rem;
+}
+
+.submit-button {
+    font-size: 1rem;
+}
+
+.from-labet {
+    user-select: none;
+}
+
+
 
 /* Media queries*/
 

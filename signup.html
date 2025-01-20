@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy LMS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" 
+        rel="stylesheet"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+    />
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="images/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="header-navigation">
+                <div class="logo d-sm-max-none">
+                    <a href="./index.html">
+                        <img src="./assets/images/logo.png" alt="Logo" class="logo">
+                    </a>
+                </div>
+                <div class="main-menu">
+                    <ul class="nav-items">
+                        <li class="nav-item"> 
+                            <a href="./index.html" 
+                            class="nav-link">Home</a> 
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="#" class="nav-link">About</a> 
+                        </li>
+                        <li class="nav-item"> 
+                            <a href="#" class="nav-link">Contact</a> 
+                        </li>
+                        <li class="nav-item" title="Login"> 
+                            <a href="#" class="nav-link btn"> 
+                                <i class="fas fa-user"></i>
+                                <span class="d-md-max-none">Login</span>
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <form action="#" method="GET" class="js-signup-form">
+            <div class="column">
+                <h2 class="text-center">Sign up</h2>
+                <div class="form-row">
+                    <label for="name" class="form-label">Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        class="text-field"
+                        required>
+                </div>
+                <div class="form-row">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="text-field"
+                        required>
+                </div>
+                <div class="form-row">
+                    <label for="password" class="form-label">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        class="text-field js-password1"
+                        required>
+                </div>
+                <div class="form-row">
+                    <label for="password2" class="form-label">Confirm Password</label>
+                    <input 
+                        type="password" 
+                        id="password2" 
+                        name="password2" 
+                        class="text-field js-password2" 
+                        required>
+                </div>
+                <div class="form-row">
+                    <input 
+                        type="radio" 
+                        name="package" 
+                        id="package-trial" 
+                        value="free" 
+                        checked>
+                    <label for="package-trial" class="form-label">Free Trial</label>
+                    <input 
+                        type="radio" 
+                        name="package" 
+                        id="package-pro" 
+                        value="pro">
+                    <label for="package-pro" class="form-label">Pro</label>
+                </div>
+                <div class="form-row">
+                    <input type="checkbox" id="toc-accept" name="toc-accept" required>
+                    <label for="toc-accept" class="form-label">I accept the <a href="#">Terms and Conditions</a> and 
+                    <a href="#">Privacy Policy.</a></label>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="btn submit-button">Submit</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="bg-dark">
+        <div class="container footer-container">
+            <div class="footer-logo text-center">
+                <a href="./index.html">
+                    <img src="./assets/images/logo.png" alt="Logo" class="logo">
+                </a>  
+            </div>
+            <div class="footer-links-1">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">About</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+            </div>
+            <div class="footer-links-2">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#" class="footer-link">Sitemap</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-link">Data Protection Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/form.js"></script>
+</body>
+</html>
