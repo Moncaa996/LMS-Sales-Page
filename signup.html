@@ -53,7 +53,7 @@
         </nav>
     </header>
     <main>
-        <form action="#" method="GET" class="js-signup-form">
+        <form action="#" method="POST" class="js-signup-form">
             <div class="column">
                 <h2 class="text-center">Sign up</h2>
                 <div class="form-row">
@@ -71,8 +71,9 @@
                         type="email" 
                         id="email" 
                         name="email" 
-                        class="text-field"
+                        class="text-field js-email-field"
                         required>
+                    <div class="error hidden js-email-validation"></div>
                 </div>
                 <div class="form-row">
                     <label for="password" class="form-label">Password</label>
@@ -91,6 +92,7 @@
                         name="password2" 
                         class="text-field js-password2" 
                         required>
+                    <div class="error hidden js-pwd-cross"></div>
                 </div>
                 <div class="form-row">
                     <input 
