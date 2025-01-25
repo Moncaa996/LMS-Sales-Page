@@ -62,8 +62,8 @@
                         type="text" 
                         id="name" 
                         name="name" 
-                        class="text-field"
-                        required>
+                        class="text-field js-name-field">
+                    <div class="error hidden js-name-validation"></div>
                 </div>
                 <div class="form-row">
                     <label for="email" class="form-label">Email</label>
@@ -71,8 +71,7 @@
                         type="email" 
                         id="email" 
                         name="email" 
-                        class="text-field js-email-field"
-                        required>
+                        class="text-field js-email-field">
                     <div class="error hidden js-email-validation"></div>
                 </div>
                 <div class="form-row">
@@ -81,8 +80,8 @@
                         type="password" 
                         id="password" 
                         name="password" 
-                        class="text-field js-password1"
-                        required>
+                        class="text-field js-password1">
+                    <div class="error hidden js-pwd1-validation"></div>
                 </div>
                 <div class="form-row">
                     <label for="password2" class="form-label">Confirm Password</label>
@@ -90,8 +89,7 @@
                         type="password" 
                         id="password2" 
                         name="password2" 
-                        class="text-field js-password2" 
-                        required>
+                        class="text-field js-password2">
                     <div class="error hidden js-pwd-cross"></div>
                 </div>
                 <div class="form-row">
@@ -110,9 +108,10 @@
                     <label for="package-pro" class="form-label">Pro</label>
                 </div>
                 <div class="form-row">
-                    <input type="checkbox" id="toc-accept" name="toc-accept" required>
+                    <input type="checkbox" id="toc-accept" name="toc-accept" class="js-toc-checkbox">
                     <label for="toc-accept" class="form-label">I accept the <a href="#">Terms and Conditions</a> and 
                     <a href="#">Privacy Policy.</a></label>
+                    <div class="error hidden js-toc-error"></div>
                 </div>
                 <div class="form-row">
                     <button type="submit" class="btn submit-button">Submit</button>
