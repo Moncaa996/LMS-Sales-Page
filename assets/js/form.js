@@ -34,11 +34,11 @@ function signupFormSubmitted(event) {
     event.preventDefault(); // Meg akadalyozza az urlap bekuldeset, alapertelmezett akciot, lefuttatja de nem kuldi be az urlapot
     let isValid = true;
 
-    isValid = isValid && validateNameFieldRequired();
-    isValid = isValid && validateEmailFieldFormat(); // itt csak a formatumot validaljuk
-    isValid = isValid && validatePassword1Field(); 
-    isValid = isValid && validatePassword2Field();
-    isValid = isValid && acceptTocValidation();
+    isValid = validateNameFieldRequired() && isValid;
+    isValid = validateEmailFieldFormat() && isValid; // itt csak a formatumot validaljuk
+    isValid = validatePassword1Field() && isValid; 
+    isValid = validatePassword2Field() && isValid;
+    isValid = acceptTocValidation() && isValid;
 
     console.log("Bekuldott urlap ervenyes?", isValid);
     // TODO: ha ervenyes az urlap, be kuldjuk
